@@ -1,0 +1,154 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'arial' sans-serif;
+}
+.topo-site{
+    
+    margin-left: auto;
+    margin-right: auto;
+}
+.navbar{
+    background-color: #e0c4c4;
+padding: 1rem;
+position: sticky;
+top: 0;
+box-shadow: 10px 0px 10px #645e5e;
+z-index: 99;
+}
+.navbar ul{
+    display: flex;
+    justify-content: end;
+    gap: 5rem;
+    margin-right: 8rem;
+}
+.navbar ul a{
+   text-decoration: none;
+   color: #fff;
+   font-size: 20px;
+}
+.navbar ul a li{
+list-style: none;
+}
+h1{
+    color: black;
+    font-size: 45px;
+    background-image:url(im);
+}
+h1 span{
+    color: rgb(204, 17, 17);
+}
+.topo-site img {
+    width: 5%;
+    position: absolute;
+    margin: 20px 0 ;
+    margin-left:320px; 
+  }
+  .gray-background{
+    background-color: #fff;
+}
+.page-inner-conten{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.cols{
+    display: grid;
+    justify-content: space-evenly;
+    padding: 4rem 1rem;
+}
+.cols-3{
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+.cols-4{
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+.cols>*{
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.cols>*:hover{
+    transform: translateY(-5px);
+}
+
+.section-title{
+    text-align: center;
+    margin-top: 4rem;
+    font-size: 1.8rem;
+}
+.subtitle-underline{
+    width: 100px;
+    height: 5px;
+    background-color: #0084ff;
+    border-radius: 9999px;
+    margin: 8px auto 0 auto;
+}
+.product{
+    color: #2c2c2c;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.product-name{
+    font-weight: 600;
+    margin-top: 0.4rem;
+}
+.rate{
+    color: #0084ff;
+    font-size: 1.3rem;
+}
+.product-price span{
+    font-weight:  600;
+}
+.exclusive-container{
+    flex-direction: row-reverse;
+    padding: 5rem 1rem;
+}
+.exclusive-container img{
+    max-width: 400px;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    color: #8f8f8f;
+    padding: 7rem 1rem;
+    box-shadow: 0.1rem 0 0.8rem #afafaf;
+    gap: 2rem;
+}
+.copyright{
+    padding: 0.5rem 0;
+    text-align: center;
+}
+.header-bottom-side-left{
+    height: 100%;
+    flex-basis: 50%;
+    padding: 5rem;
+}
+
+@media (max-width:800px){
+    .section-title{
+        font-size: 1rem;
+    }
+    .cols-3{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .cols-4{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .product-name, .product-price, .rate{
+        margin-right: 1rem;
+        overflow: hidden;
+        font-size: 0.8rem;
+    }
+    .exclusive-container{
+        flex-direction: column-reverse;
+    }
+    .exclusive-container img{
+        margin-bottom: 4rem;
+    }
+}
